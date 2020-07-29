@@ -1,9 +1,9 @@
-# sample-submission
+# Sample Test Data
 Sample Test data examples for the SemEval 2020 Task 11 NLPContributionGraph evaluation per evaluation phase
 
 ### `Evaluation Phase 1: End-to-end evaluation phase`
 
-#### input format
+#### Input
 The test data release will be formatted as follows:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
@@ -13,7 +13,7 @@ The test data release will be formatted as follows:
         │   └── ...                                    # if N articles were annotated, this repeats (N-1) more times
         └── ...                                        # if K tasks were selected overall, this repeats (K-1) more times
 
-#### output format
+#### Output
 The submission will have be organized per the following directory structure:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
