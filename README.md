@@ -1,6 +1,19 @@
 # sample-submission
-Sample submission data that the SemEval 2020 Task 11 NLPContributionGraph evaluation script will process in the `Evaluation phase 1: End-to-end evaluation phase`
+Sample Test data examples for the SemEval 2020 Task 11 NLPContributionGraph evaluation per evaluation phase
 
+### `Evaluation Phase 1: End-to-end evaluation phase`
+
+#### input format
+The test data release will be formatted as follows:
+
+    [task-name-folder]/                                # machine-translation, named-entity-recognition
+        ├── [article-counter-folder]/                  # ranges from 0 to 9 since we annotated 10 articles per task
+        │   ├── [articlename]-Grobid-out.txt           # plaintext output from the [Grobid parser](https://github.com/kermitt2/grobid)
+        │   ├── [articlename]-Stanza-out.txt           # plaintext preprocessed output from [Stanza](https://github.com/stanfordnlp/stanza)
+        │   └── ...                                    # if N articles were annotated, this repeats (N-1) more times
+        └── ...                                        # if K tasks were selected overall, this repeats (K-1) more times
+
+#### output format
 The submission will have be organized per the following directory structure:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
@@ -11,8 +24,16 @@ The submission will have be organized per the following directory structure:
         │   │   └── research-problem.txt               # `research problem` triples (one research problem statement per line)
         │   │   └── model.txt                          # `model` triples (one statement per line)
         │   │   └── ...                                # there are 12 information units in all and each article may be annotated by 3 or 6
-        │   └── ...                                    # there are ten articles annotated for each task, so this repeats nine more times
-        └── ...                                        # there are two tasks selected overall, so this repeats one more time
+        │   └── ...                                    # if N articles were annotated, this repeats (N-1) more times
+        └── ...                                        # if K tasks were selected overall, this repeats (K-1) more times
+
+### `Evaluation Phase 2, Part 1: Phrase Extraction Testing`
+
+Coming soon...
+
+### `Evaluation Phase 2, Part 2: Triples Extraction Testing`
+
+Coming soon...
 
 ### Notes for making a successful Codalab submission:
 
