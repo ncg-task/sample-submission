@@ -7,7 +7,7 @@ Sample Test data examples for the SemEval 2020 Task 11 NLPContributionGraph eval
 The test data release will be formatted as follows:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
-        ├── [article-counter-folder]/                  # ranges from 0 to 9 since we annotated 10 articles per task
+        ├── [article-counter-folder]/                  # ranges from 0 to N if we annotated N articles per task
         │   ├── [articlename]-Grobid-out.txt           # plaintext output from the [Grobid parser](https://github.com/kermitt2/grobid)
         │   ├── [articlename]-Stanza-out.txt           # plaintext preprocessed output from [Stanza](https://github.com/stanfordnlp/stanza)
         │   └── ...                                    # if N articles were annotated, this repeats (N-1) more times
@@ -17,7 +17,7 @@ The test data release will be formatted as follows:
 The submission will have be organized per the following directory structure:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
-        ├── [article-counter-folder]/                  # ranges from 0 to 9 since we annotated 10 articles per task
+        ├── [article-counter-folder]/                  # ranges from 0 to N if we annotated N articles per task
         │   ├── sentences.txt                          # annotated contribution sentences in the file identified by the sentence number in the preprocessed data with counter starting at 1
         │   └── entities.txt                           # annotated phrases from the contribution sentences where the phrase spans are specified by their first and last token numbers with the token counter starting at 1
         │   └── triples/                               # the folder containing information unit triples one per line
