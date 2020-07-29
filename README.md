@@ -1,5 +1,5 @@
 # Sample Test Data
-Sample Test data examples for the SemEval 2020 Task 11 NLPContributionGraph evaluation per evaluation phase
+Test data input and expected output examples for the SemEval 2020 Task 11 NLPContributionGraph evaluation per evaluation phase
 
 ### `Evaluation Phase 1: End-to-end evaluation phase`
 
