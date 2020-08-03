@@ -7,7 +7,7 @@ Test data input and expected output examples for the SemEval 2020 Task 11 NLPCon
 The test data release will be formatted as follows:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
-        ├── [article-counter-folder]/                  # ranges from 0 to N if we annotated N articles per task
+        ├── [article-counter-folder]/                  # ranges from 0 to N-1 if we annotated N articles per task
         │   ├── [articlename]-Grobid-out.txt           # plaintext output from the [Grobid parser](https://github.com/kermitt2/grobid)
         │   ├── [articlename]-Stanza-out.txt           # plaintext preprocessed output from [Stanza](https://github.com/stanfordnlp/stanza)
         │   └── ...                                    # if N articles were annotated, this repeats (N-1) more times
