@@ -17,7 +17,7 @@ The test data release will be formatted as follows:
 The submission will have be organized per the following directory structure:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
-        ├── [article-counter-folder]/                  # ranges from 0 to N if we annotated N articles per task
+        ├── [article-counter-folder]/                  # ranges from 0 to N-1 if we annotated N articles per task
         │   ├── sentences.txt                          # annotated contribution sentences in the file identified by the sentence number in the preprocessed data with counter starting at 1
         │   └── entities.txt                           # annotated phrases from the contribution sentences where the phrase spans are specified by their first and last token numbers with the token counter starting at 1
         │   └── triples/                               # the folder containing information unit triples one per line
