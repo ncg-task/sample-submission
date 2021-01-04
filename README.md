@@ -13,7 +13,7 @@ The test data release will be formatted as follows:
         │   └── ...                                    # if N articles were annotated, this repeats (N-1) more times
         └── ...                                        # if K tasks were selected overall, this repeats (K-1) more times
 
-#### Output
+#### Submission to Codalab
 The submission will have be organized per the following directory structure:
 
     [task-name-folder]/                                # machine-translation, named-entity-recognition
